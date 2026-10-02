@@ -1,0 +1,142 @@
+/* 
+  Paleta de colores: MORADO y BLANCO 
+*/
+:root {
+    --morado-principal: #6f2dbd;
+    --morado-oscuro: #3c096c;
+    --morado-claro: #e9d8fd;
+    --blanco: #ffffff;
+    --gris-claro: #f8f9fa;
+    --texto-oscuro: #333333;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--texto-oscuro);
+    background-color: var(--blanco);
+    padding-top: 70px; /* Compensa el navbar fijo */
+}
+
+/* === Navbar === */
+.navbar {
+    background-color: var(--blanco) !important;
+    border-bottom: 2px solid var(--morado-claro);
+}
+.navbar-brand {
+    color: var(--morado-principal) !important;
+    font-size: 1.5rem;
+}
+.nav-link {
+    color: var(--texto-oscuro) !important;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+.nav-link:hover, .nav-link.active {
+    color: var(--morado-principal) !important;
+}
+.navbar-toggler {
+    border-color: var(--morado-claro);
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(111, 45, 189, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* === Botones Personalizados === */
+.btn-custom-primary {
+    background-color: var(--morado-principal);
+    color: var(--blanco);
+    border: none;
+    transition: all 0.3s ease;
+}
+.btn-custom-primary:hover {
+    background-color: var(--morado-oscuro);
+    color: var(--blanco);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(111, 45, 189, 0.3);
+}
+
+.btn-outline-custom {
+    color: var(--morado-principal);
+    border: 2px solid var(--morado-principal);
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+.btn-outline-custom:hover {
+    background-color: var(--morado-principal);
+    color: var(--blanco);
+}
+
+/* === Hero Section (Inicio) === */
+.hero-section {
+    min-height: 80vh;
+    background: linear-gradient(135deg, var(--blanco) 0%, var(--morado-claro) 100%);
+}
+.hero-section h1 span {
+    color: var(--morado-principal);
+}
+
+/* === Utilidades de Color de Texto === */
+.text-custom {
+    color: var(--morado-principal);
+}
+.bg-custom-secondary {
+    background-color: var(--morado-claro) !important;
+    color: var(--morado-oscuro) !important;
+}
+.bg-custom-dark {
+    background-color: var(--morado-oscuro) !important;
+}
+
+/* === Tarjetas de Proyectos === */
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(111, 45, 189, 0.15) !important;
+}
+.project-card .card-title {
+    color: var(--morado-oscuro);
+}
+
+/* === Barras de progreso === */
+.progress {
+    height: 12px;
+    background-color: var(--gris-claro);
+    border-radius: 10px;
+}
+.custom-progress {
+    background-color: var(--morado-principal);
+    width: 0; /* Empieza en 0 para la animación con JS */
+    transition: width 1.5s ease-in-out;
+}
+
+/* === Formulario de Contacto === */
+.form-control:focus {
+    border-color: var(--morado-principal);
+    box-shadow: 0 0 0 0.25rem rgba(111, 45, 189, 0.25);
+}
+
+/* === Animación al hacer Scroll (IntersectionObserver) === */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* === Botón "Volver Arriba" === */
+#btnTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none; /* Oculto por defecto */
+    z-index: 99;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+}
