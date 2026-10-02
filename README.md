@@ -2,8 +2,27 @@
 
 Este es el repositorio de mi portafolio web personal, desarrollado como proyecto académico. Es un sitio 100% estático diseñado para ser publicado en GitHub Pages.
 
-## URL del Proyecto (GitHub Pages)
-👉 **[COMPLETAR CON LA URL DE GITHUB PAGES AQUÍ]**
+## Repositorio del Proyecto
+👉 https://github.com/Kramirezxoro/Portafolio.git
+
+## Cómo abrir el proyecto localmente
+
+Sigue estos pasos para visualizar el portafolio en tu computadora:
+
+1. **Clona este repositorio:**
+   Abre tu terminal y ejecuta el siguiente comando:
+   ```bash
+   git clone https://github.com/Kramirezxoro/Portafolio.git
+   ```
+
+2. **Navega a la carpeta del proyecto:**
+   ```bash
+   cd Portafolio
+   ```
+
+3. **Abre el proyecto en tu navegador:**
+   - Puedes hacer **doble clic** en el archivo `index.html` desde tu explorador de archivos, lo cual abrirá la página en tu navegador predeterminado.
+   - Alternativamente, si utilizas un editor de código como Visual Studio Code, puedes abrir la carpeta del proyecto y usar una extensión como **Live Server** para visualizarlo.
 
 ## Tecnologías Utilizadas
 - **HTML5:** Estructura semántica del contenido.
