@@ -1,0 +1,9 @@
+LISTA DE CAPTURAS DE PANTALLA A TOMAR:
+
+Debes tomar capturas de pantalla de tu terminal (donde se vean los comandos ejecutados) y guardarlas en esta carpeta. Sugerencia de nombres:
+
+1. captura_git_init.png (evidencia de cuando iniciaste el repo y primer commit)
+2. captura_git_commits.png (evidencia de varios commits creados)
+3. captura_git_branch_merge.png (evidencia de creación de rama, switch y merge de feature/proyectos)
+4. captura_git_push.png (evidencia de cuando conectaste el remote y empujaste a GitHub)
+5. captura_github_pages.png (captura desde el navegador mostrando que la web está publicada y el link final)
